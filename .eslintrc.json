@@ -1,6 +1,8 @@
 {
   "extends": "eslint-config-hapi",
   "parserOptions": {
-    "ecmaVersion": 9
+    "ecmaVersion": 9,
+    "func-style": ["error"],
+    "arrow-parens": []
   }
 }
