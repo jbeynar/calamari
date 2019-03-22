@@ -1,7 +1,12 @@
 # Calamari
-npm install
-npm run
 
+## Setup
+1. Get node 10.x (via nvm recommended)
+2. npm install
+3. npm run
+4. Enjoy Extractor API
+
+## Execute HTTP ETL task
 POST localhost:3000 with the following payload (task definition):
 ```
 {
@@ -27,6 +32,6 @@ expect to returns:
 ```
 where `result.data` is a structure extracted from HTML.
 
-# Motivation
+## Motivation
 
 Open source lightware API inspired by larger private project: dc-server.
