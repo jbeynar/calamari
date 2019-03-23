@@ -1,6 +1,15 @@
-# Calamari
+<p align="center">
+  <a href="https://hapipal.com"><img src="https://raw.githubusercontent.com/jbeynar/calamari/master/icon.png" alt="hapi pal" width="200" /></a>
+</p>
+<h3 align="center">
+  Pointer API
+</h3>
+<p align="center">
+  A friendly, lightware web scrapper delivered as an HTTP API 
+</p>
 
 ## Setup
+
 1. Get node 10.x (via nvm recommended)
 2. npm install
 3. npm run
