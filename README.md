@@ -6,6 +6,10 @@
 3. npm run
 4. Enjoy Extractor API
 
+## Documentation
+Swagger is avaliable:
+http://localhost:3000/documentation
+
 ## Execute HTTP ETL task
 POST localhost:3000 with the following payload (task definition):
 ```
