@@ -1,5 +1,5 @@
 {
-  "name": "calamari",
+  "name": "pointer",
   "version": "1.0.0",
   "description": "Web scrapper as a HTTP API",
   "author": "jbeynar",
@@ -11,16 +11,18 @@
   },
   "scripts": {
     "start": "node server",
-    "test": "lab -a code -I 'core,__core-js_shared__' -L",
+    "test": "lab -a code -l -L",
     "lint": "eslint ."
   },
   "dependencies": {
     "boom": "7.x.x",
-    "cheerio": "^1.0.0-rc.2",
+    "cheerio": "1.0.0-rc.2",
     "haute-couture": "3.x.x",
+    "http-as-promised": "2.0.1",
     "joi": "14.x.x",
-    "lodash": "^4.17.11",
-    "md5": "^2.2.1"
+    "lodash": "4.17.11",
+    "md5": "2.2.1",
+    "url": "^0.11.0"
   },
   "devDependencies": {
     "code": "5.x.x",
