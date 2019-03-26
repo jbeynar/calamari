@@ -4,8 +4,9 @@
 <h3 align="center">
   Pointer API
 </h3>
+<p align="center">A friendly, lightware web scrapper delivered as an HTTP API</p>
 <p align="center">
-  A friendly, lightware web scrapper delivered as an HTTP API 
+  <img src="https://travis-ci.org/jbeynar/pointer.svg?branch=master">
 </p>
 
 ## Setup
