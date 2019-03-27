@@ -41,11 +41,14 @@ expect to returns:
      code: 200,
      path: '/' },
   result:
-   { datastamp: '2b6fc1614e3893667d26497a329e7667',
-     data: { heading: [25839] } } }
+   {
+     datastamp: '2b6fc1614e3893667d26497a329e7667',
+     data: { heading: [25839] } 
+   }
+}
 ```
 where `result.data` is a structure extracted from HTML.
 
 ## Motivation
 
-Open source lightware API inspired by larger private project: dc-server.
+Open source lightware API inspired by larger project dc-server.
