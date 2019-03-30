@@ -6,7 +6,8 @@
 </h3>
 <p align="center">A friendly, lightware web scrapper delivered as an HTTP API</p>
 <p align="center">
-  <img src="https://travis-ci.org/jbeynar/pointer.svg?branch=master">
+  <img src="https://travis-ci.org/jbeynar/pointer.svg?branch=master">&nbsp;
+  <img src='https://coveralls.io/repos/github/jbeynar/pointer/badge.svg?branch=master' alt='Coverage Status' />
 </p>
 
 ## Setup
@@ -21,11 +22,12 @@ Swagger is avaliable:
 http://localhost:3000/documentation
 
 ## Execute HTTP ETL task
-POST localhost:3000 with the following payload (task definition):
+POST localhost:3000/extractor with the following payload (task definition):
 ```
 {
-  "hostname": "example.com",
-  "path": "/",
+  "download":{
+    "url": "http://example.com/"
+  },
   "map": {
     "heading": "#header_counters strong:first-child"
   }
@@ -47,8 +49,12 @@ expect to returns:
    }
 }
 ```
-where `result.data` is a structure extracted from HTML.
+where `result.data` is the data extracted from HTTP response.
 
 ## Motivation
 
 Open source lightware API inspired by larger project dc-server.
+
+### WIP
+
+./node_modules/.bin/lab -a code -l -L -r lcov | ./node_modules/.bin/coveralls

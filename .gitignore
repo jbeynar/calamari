@@ -2,3 +2,4 @@ node_modules
 .tmp
 server/.env
 .idea
+.coveralls.yml

@@ -27,6 +27,7 @@
   "devDependencies": {
     "code": "5.x.x",
     "confidence": "4.x.x",
+    "coveralls": "^3.0.3",
     "dotenv": "6.x.x",
     "eslint": "5.x.x",
     "eslint-config-hapi": "12.x.x",
