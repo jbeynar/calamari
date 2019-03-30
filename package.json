@@ -12,6 +12,7 @@
   "scripts": {
     "start": "node server",
     "test": "lab -a code -l -L",
+    "testReport": "lab -a code -l -L -r lcov | coveralls",
     "lint": "eslint ."
   },
   "dependencies": {
