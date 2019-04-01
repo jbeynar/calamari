@@ -22,7 +22,7 @@ Swagger is avaliable:
 http://localhost:3000/documentation
 
 ## Execute HTTP ETL task
-POST localhost:3000/extractor with the following payload (task definition):
+POST `localhost:3000/extractor` with the following payload (task definition):
 ```
 {
   "download":{
