@@ -28,8 +28,12 @@ describe('HTTP API', () => {
             }
         };
         const query = { url: addr + '/extractor', body: JSON.stringify(task), error: false };
-        await Http.post(query).spread((response) => {
+        await Http.post(query).spread((response, rawBody) => {
+            const body = JSON.parse(rawBody);
             expect(response.statusCode).to.be.equal(200);
+            expect(body.name).to.be.equal('Pointer task');
+            expect(body.input).to.be.an.object();
+            expect(body.extraction).to.be.an.object();
         });
     });
 
